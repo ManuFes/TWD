@@ -21,7 +21,7 @@
     background-size: cover;
     background-position: center;
 }
-@media only screen and (width<=1000px){
+@media only screen and (width<=750px){
     #hero{
         background-image: url('../img/maschica.jpg');
         background-size: cover;
