@@ -1,0 +1,37 @@
+/******* SIZING ********************************************************/
+.w-30{
+    width: 30%;
+}
+
+
+/******* BG COLORS *****************************************************/
+
+.bg-navbar{
+    background-color: rgb(0, 0, 0);
+}
+
+/******* HERO **********************************************************/
+
+#hero{
+    background-image: url('../img/her.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* Estilo normal de la tarjeta */
+.card {
+    /* Estilos normales aquí */
+    /* Por ejemplo, tamaño, bordes, sombra, etc. */
+    transition: transform 500ms; /* Agrega una transición suave */
+  }
+  
+  /* Estilo cuando el mouse está sobre la tarjeta */
+  .card:hover {
+    transform: scale(1.05); /* Aumenta la escala al 105% del tamaño original */
+  }
+  
+/******NavBar************************************************************/
+.color-brown{
+    color: rgb(98, 27, 14);
+}
