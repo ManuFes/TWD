@@ -21,6 +21,13 @@
     background-size: cover;
     background-position: center;
 }
+@media only screen and (width<=1000px){
+    #hero{
+        background-image: url('../img/maschica.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+}
 
 
 /* Estilo normal de la tarjeta */
