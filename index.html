@@ -1,281 +1,464 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/index.css">
-    <link rel="shortcut icon" href="./img/favicon.jpeg" type="image/x-icon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="shortcut icon" href="./img/favicon.jpeg" type="image/x-icon" />
     <title>The walking dead - Tribute web</title>
-</head>
-<body class="bg-dark">
+  </head>
+  <body class="bg-dark">
+    <!-- BARRA DE NAVEGACION DE BOOTSTRAP v5.3-->
+    <nav class="navbar navbar-expand-lg bg-navbar">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          ><img src="./img/favicon.jpeg" alt="Logo TWD" class="w-30"
+        /></a>
+        <!-- Botón Menú Hamburguesa -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Links del menu que desaparecen y aparecen al pulsar el botón anterior -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link fs-3 text-white navHover"
+                aria-current="page"
+                href="#"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-3 text-white navHover" href="#intro"
+                >Introduction</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-3 text-white navHover" href="#seasons"
+                >Seasons</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-3 text-white navHover" href="#mapa"
+                >Mapa de la serie</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-3 text-white navHover" href="#gallery"
+                >Gallery</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-3 text-white navHover" href="#contact"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-        <!-- BARRA DE NAVEGACION DE BOOTSTRAP v5.3-->
-        <nav class="navbar navbar-expand-lg bg-navbar">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#"><img src="./img/favicon.jpeg" alt="Logo TWD" class="w-30"></a>
+    <!-- Hero section with background image-->
+    <header id="hero" class="vh-100"></header>
 
+    <!-- Intro section with bootstrap grid-->
+    <section id="intro" class="p-5">
+      <h1 class="display-2 text-center fw-bold mb-5 text-danger">
+        Introduction
+      </h1>
+      <div class="container">
+        <!-- Grid basico con bootstrap de 2 columnas-->
+        <div class="row g-5">
+          <div class="col-12 col-md-6 text-light">
+            <p>
+              "The Walking Dead" ha trascendido como más que una serie de
+              televisión; se ha convertido en un fenómeno cultural que ha
+              capturado la imaginación de millones de espectadores en todo el
+              mundo. Desde su estreno en 2010, esta apasionante saga de
+              supervivencia, humanidad y el constante peligro de los muertos
+              vivientes ha dejado una marca indeleble en el paisaje de la
+              narrativa moderna. Este tributo busca honrar no solo la
+              extraordinaria narrativa y producción de la serie, sino también la
+              profunda conexión que ha forjado con su audiencia.
+            </p>
+            <br />
+            <p>
+              La serie, basada en los cómics de Robert Kirkman, Tony Moore y
+              Charlie Adlard, nos sumerge en un mundo postapocalíptico donde los
+              zombis campan a sus anchas y los vivos luchan no solo contra
+              ellos, sino también entre sí, en una batalla interminable por la
+              supervivencia. A lo largo de las temporadas, "The Walking Dead" ha
+              explorado temas complejos como la moralidad, la lealtad, el
+              sacrificio y lo que realmente significa estar vivo en un mundo
+              donde la muerte acecha en cada esquina.
+            </p>
+            <br />
+          </div>
+          <div class="col-12 col-md-6">
+            <img
+              src="./img/introduccion.jpg"
+              alt="Foto introduccion de TWD"
+              class="w-100"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Seasons -->
+    <section class="p-5">
+      <h1 class="display-2 text-center fw-bold text-danger mb-5" id="seasons">
+        Seasons
+      </h1>
 
-              <!-- Botón Menú Hamburguesa -->
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-
-
-              <!-- Links del menu que desaparecen y aparecen al pulsar el botón anterior -->
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link fs-3 text-white hoverNav" aria-current="page" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link fs-3 text-white" href="#intro">Introduction</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link fs-3 text-white" href="#seasons">Seasons</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link fs-3 text-white" href="#mapa">Mapa de la serie</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link fs-3 text-white" href="#gallery">Gallery</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link fs-3 text-white" href="#contact">Contact</a>
-                  </li>
-
-                  <!-- Deshabilitado, No necesario-->
-                  <!--<li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Dropdown
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                  </li>-->
-                  
-                  <!-- Deshabilitado
-                  <li class="nav-item">
-                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-                  </li>-->
-                <!-- Deshabilitado barra de busqueda
-                <form class="d-flex" role="search">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>-->
+      <div class="container">
+        <div class="row g-3">
+          <!-- Card de bootstrap 1 -->
+          <div
+            class="col-12 col-md-6 col-lg-3 col-xxl-4 d-flex flex-row align-items-stretch"
+          >
+            <div class="card bg-secondary">
+              <img
+                src="./img/S1.jpg"
+                class="card-img-top"
+                alt="imagen de la primera temporada de TWD"
+              />
+              <div class="card-body">
+                <h5 class="card-title text-light">Temporada 1</h5>
+                <p class="card-text text-light">
+                  La serie comienza con Rick Grimes, un sheriff que despierta de
+                  un coma para encontrar un mundo devastado por los zombies. Se
+                  reúne con su familia y un grupo de supervivientes,
+                  enfrentándose a los desafíos de un mundo nuevo y peligroso.
+                </p>
+                <div
+                  class="card-footer bg-secondary border-0 d-flex align-items-"
+                >
+                  <a href="#" class="btn btn-danger">Read more</a>
+                </div>
               </div>
             </div>
-          </nav>
-
-        <div id="wrapper" class="container bg-dark px-0">
-
-
-        <!-- Hero section with background image-->
-        <header id="hero" class="vh-100 ">
-
-        </header>
-
-        <!-- Intro section with bootstrap grid-->
-        <section id="intro" class="p-5">
-            <h1 class="display-2 text-center fw-bold mb-5 text-danger">Introduction</h1>
-            <div class="container">
-                <!-- Grid basico con bootstrap de 2 columnas-->
-                <div class="row g-5">
-                    <div class="col-12 col-md-6 text-light">
-                        <p>
-                          "The Walking Dead" ha trascendido como más que una serie de televisión; se ha convertido en un fenómeno cultural que ha capturado la imaginación de millones de espectadores en todo el mundo. Desde su estreno en 2010, esta apasionante saga de supervivencia, humanidad y el constante peligro de los muertos vivientes ha dejado una marca indeleble en el paisaje de la narrativa moderna. Este tributo busca honrar no solo la extraordinaria narrativa y producción de la serie, sino también la profunda conexión que ha forjado con su audiencia.
-                        </p>
-                        <br>
-                        <p>
-                          La serie, basada en los cómics de Robert Kirkman, Tony Moore y Charlie Adlard, nos sumerge en un mundo postapocalíptico donde los zombis campan a sus anchas y los vivos luchan no solo contra ellos, sino también entre sí, en una batalla interminable por la supervivencia. A lo largo de las temporadas, "The Walking Dead" ha explorado temas complejos como la moralidad, la lealtad, el sacrificio y lo que realmente significa estar vivo en un mundo donde la muerte acecha en cada esquina.
-                        </p>
-                        <br>
-                    </div>
-                    <div class="col-12 col-md-6">
-                      <img src="./img/introduccion.jpg" alt="Foto introduccion de TWD" class="w-100">
-                    </div>
+          </div>
+          <!-- Card 2 -->
+          <div
+            class="col-12 col-md-6 col-lg-3 col-xxl-4 d-flex flex-row align-items-stretch"
+          >
+            <div class="card bg-secondary">
+              <img
+                src="./img/S2.jpg"
+                class="card-img-top"
+                alt="imagen de la primera temporada de TWD"
+              />
+              <div class="card-body">
+                <h5 class="card-title text-light">Temporada 2</h5>
+                <p class="card-text text-light">
+                  El grupo de Rick busca refugio en una granja mientras
+                  enfrentan amenazas internas y externas. La tensión aumenta con
+                  la desaparición de Sophia y las crecientes diferencias entre
+                  los miembros del grupo.
+                </p>
+                <div
+                  class="card-footer bg-secondary border-0 d-flex align-items-"
+                >
+                  <a href="#" class="btn btn-danger">Read more</a>
                 </div>
+              </div>
             </div>
-        </section>
-        <!-- Seasons -->
-        <section class="p-5">
-            <h1 class="display-2 text-center fw-bold text-danger mb-5" id="seasons">Seasons</h1>
-
-            <div class="container">
-                <div class="row g-3">
-                    <!-- Card de bootstrap 1 -->
-                    <div class="col-12 col-md-6 col-lg-3 col-xxl-4 d-flex flex-row align-items-stretch">
-                      <div class="card bg-secondary" >
-                          <img src="./img/S1.jpg" class="card-img-top" alt="imagen de la primera temporada de TWD">
-                          <div class="card-body">
-                            <h5 class="card-title text-light">Temporada 1</h5>
-                            <p class="card-text  text-light">La serie comienza con Rick Grimes, un sheriff que despierta de un coma para encontrar un mundo devastado por los zombies. Se reúne con su familia y un grupo de supervivientes, enfrentándose a los desafíos de un mundo nuevo y peligroso.</p>
-                            <div class="card-footer bg-secondary border-0 d-flex align-items-">
-                              <a href="#" class="btn btn-danger">Read more</a>
-                            </div>
-                          </div>
-                        </div>
-                  </div>
-                    <!-- Card 2 -->
-                    <div class="col-12 col-md-6 col-lg-3 col-xxl-4 d-flex flex-row align-items-stretch">
-                        <div class="card bg-secondary" >
-                            <img src="./img/S2.jpg" class="card-img-top" alt="imagen de la primera temporada de TWD">
-                            <div class="card-body">
-                              <h5 class="card-title text-light">Temporada 2</h5>
-                              <p class="card-text text-light">El grupo de Rick busca refugio en una granja mientras enfrentan amenazas internas y externas. La tensión aumenta con la desaparición de Sophia y las crecientes diferencias entre los miembros del grupo.</p>
-                              <div class="card-footer bg-secondary border-0 d-flex align-items-">
-                                <a href="#" class="btn btn-danger">Read more</a>
-                              </div>
-
-                            </div>
-                          </div>
-                    </div>
-                    <!-- Card 3 -->
-                    <div class="col-12 col-md-6 col-lg-3 col-xxl-4 d-flex flex-row align-items-stretch">
-                        <div class="card bg-secondary" >
-                            <img src="./img/S3.jpg" class="card-img-top" alt="imagen de la primera temporada de TWD">
-                            <div class="card-body">
-                              <h5 class="card-title text-light">Temporada 3</h5>
-                              <p class="card-text text-light"> Los supervivientes descubren una prisión que buscan convertir en su nuevo hogar. Sin embargo, también se encuentran con la comunidad de Woodbury, gobernada por el despiadado Gobernador, lo que lleva a conflictos mortales.</p>
-                              <div class="card-footer bg-secondary border-0 d-flex align-items-">
-                                <a href="#" class="btn btn-danger">Read more</a>
-                              </div>
-                            </div>
-                          </div>
-                    </div>
-                    <!-- Card 4 -->
-                    <div class="col-12 col-md-6 col-lg-3 col-xxl-4 d-flex flex-row align-items-stretch">
-                        <div class="card bg-secondary" >
-                            <img src="./img/S4.jpg" class="card-img-top" alt="imagen de la primera temporada de TWD">
-                            <div class="card-body text-light">
-                              <h5 class="card-title text-light">Temporada 4</h5>
-                              <p class="card-text">El grupo se enfrenta a una enfermedad mortal dentro de la prisión y a la creciente amenaza del Gobernador. La temporada concluye con el grupo dividido y en camino hacia un supuesto refugio llamado Terminus.</p>
-                              <div class="card-footer bg-secondary border-0 d-flex align-items-">
-                                <a href="#" class="btn btn-danger">Read more</a>
-                              </div>
-                            </div>
-                          </div>
-                    </div>
-                    <!-- Card 5 -->
-                    <div class="col-12 col-md-6 col-lg-3 col-xxl-4 d-flex flex-row align-items-stretch">
-                        <div class="card bg-secondary" >
-                            <img src="./img/S5.jpg" class="card-img-top" alt="imagen de la primera temporada de TWD">
-                            <div class="card-body text-light">
-                              <h5 class="card-title text-light">Temporada 5</h5>
-                              <p class="card-text"> Después de escapar de Terminus y reagruparse, los supervivientes se dirigen hacia Washington D.C., creyendo que hay una cura para la infección. Se encuentran con la comunidad de Alexandria, donde intentan adaptarse a una vida más normal.</p>
-                              <div class="card-footer bg-secondary border-0 d-flex align-items-">
-                                <a href="#" class="btn btn-danger">Read more</a>
-                              </div>
-                            </div>
-                          </div>
-                    </div>
-                    <!-- Card 6 -->
-                    <div class="col-12 col-md-6 col-lg-3 col-xxl-4 d-flex flex-row align-items-stretch">
-                        <div class="card bg-secondary" >
-                            <img src="./img/S6.jpg" class="card-img-top" alt="imagen de la primera temporada de TWD">
-                            <div class="card-body">
-                              <h5 class="card-title text-light">Temporada 6</h5>
-                              <p class="card-text text-light">La temporada se enfoca en la adaptación del grupo a Alexandria y en los desafíos de integrarse con sus residentes. Los peligros aumentan con la aparición de los Salvadores, un grupo brutal dirigido por Negan.</p>
-                              <div class="card-footer bg-secondary border-0 d-flex align-items-">
-                                <a href="#" class="btn btn-danger">Read more</a>
-                              </div>
-                            </div>
-                          </div>
-                    </div>
-                    <!-- Card 7 -->
-                    <div class="col-12 col-md-6 col-lg-3 col-xxl-4 d-flex flex-row align-items-stretch">
-                        <div class="card bg-secondary" >
-                            <img src="./img/S7.jpg" class="card-img-top" alt="imagen de la primera temporada de TWD">
-                            <div class="card-body">
-                              <h5 class="card-title text-light">Temporada 7</h5>
-                              <p class="card-text text-light">Esta temporada se centra en el reinado tiránico de Negan y los Salvadores sobre Alexandria y otras comunidades. Rick y su grupo deben navegar por la opresión y planear cómo luchar contra esta nueva amenaza.</p>
-                              <div class="card-footer bg-secondary border-0 d-flex align-items-">
-                                <a href="#" class="btn btn-danger">Read more</a>
-                              </div>
-                            </div>
-                          </div>
-                    </div>
-                    <!-- Card 8 -->
-                    <div class="col-12 col-md-6 col-lg-3 col-xxl-4 d-flex flex-row align-items-stretch">
-                        <div class="card bg-secondary" >
-                            <img src="./img/S8.jpeg" class="card-img-top" alt="imagen de la primera temporada de TWD">
-                            <div class="card-body">
-                              <h5 class="card-title text-light">Temporada 8</h5>
-                              <p class="card-text text-light">La temporada 8 de "The Walking Dead" se trata de la guerra entre el grupo de Rick y los Salvadores liderados por Negan. La guerra causa numerosas bajas y destrucción en ambos lados. Rick pierde a su hijo Carl, quien fue mordido por un caminante y le insta a hacer las paces con Negan. La temporada está basada en la serie de cómics "All Out War Part I & II" e introduce a un nuevo personaje llamado Siddiq.</p>
-                              <div class="card-footer bg-secondary border-0 d-flex align-items-">
-                                <a href="#" class="btn btn-danger">Read more</a>
-                              </div>
-                            </div>
-                          </div>
-                    </div>
+          </div>
+          <!-- Card 3 -->
+          <div
+            class="col-12 col-md-6 col-lg-3 col-xxl-4 d-flex flex-row align-items-stretch"
+          >
+            <div class="card bg-secondary">
+              <img
+                src="./img/S3.jpg"
+                class="card-img-top"
+                alt="imagen de la primera temporada de TWD"
+              />
+              <div class="card-body">
+                <h5 class="card-title text-light">Temporada 3</h5>
+                <p class="card-text text-light">
+                  Los supervivientes descubren una prisión que buscan convertir
+                  en su nuevo hogar. Sin embargo, también se encuentran con la
+                  comunidad de Woodbury, gobernada por el despiadado Gobernador,
+                  lo que lleva a conflictos mortales.
+                </p>
+                <div
+                  class="card-footer bg-secondary border-0 d-flex align-items-"
+                >
+                  <a href="#" class="btn btn-danger">Read more</a>
                 </div>
+              </div>
             </div>
-        </section>
-        <section>
-
-        </section>
-        <div class="container">
-          <div class="p-5 bg-dark row">
-            <h1 class="display-2 text-center fw-bold text-danger mb-5" id="mapa">Mapa de la serie</h1>
-            <div class="ratio ratio-1x1 w-50 col"><iframe src="https://www.google.com/maps/d/embed?mid=1EIyl56n4fzRrSD1sMMjfTlug_i4&hl=en_US&ehbc=2E312F" width="640" height="480"></iframe></div>
-            <div class="text-light col ps-5">
-              <p>
-                Este mapa interactivo te guía a través de los momentos más emblemáticos y trascendentales de la saga de cómics "The Walking Dead". A medida que explores este mapa, encontrarás localizaciones clave donde nuestros personajes enfrentaron desafíos inimaginables, forjaron alianzas cruciales, y lucharon contra amenazas tanto vivas como muertas.
-                <br> <br>
-                <b>Atlanta:</b> El inicio de un viaje inolvidable, donde Rick Grimes despierta en un mundo transformado por el apocalipsis zombi, iniciando su búsqueda desesperada por su familia.
-                <br> <br>
-
-                <b>La Granja de Hershel:</b> Un refugio temporal de esperanza y desesperación, marcado por revelaciones personales, conflictos morales y la pérdida de seres queridos.
-                <br> <br>
-
-                <b>La Prisión:</b> Un símbolo de seguridad en medio del caos, que se convierte en escenario de algunas de las batallas más intensas contra los caminantes y enfrentamientos con el Gobernador, culminando en tragedia y devastación.
-                <br> <br>
-
-                <b>Woodbury:</b> Bajo la fachada de una comunidad idílica, el Gobernador esconde su tiranía y obsesión con el poder, lo que lleva a enfrentamientos épicos que cambian el curso de la historia.
-                <br> <br>
-
-                <b>Terminus:</b> Lo que parece ser un santuario para los sobrevivientes rápidamente se revela como una trampa mortal, destacando la brutalidad a la que puede llegar la humanidad en su peor momento.
-                <br> <br>
-
-                <b>Alejandría:</b> Un bastión de civilización en el caos, donde los protagonistas buscan construir una nueva vida, enfrentando al mismo tiempo las amenazas internas y externas que desafían su frágil estabilidad.
-                <br> <br>
-
-                <b>La Colonia Hilltop:</b> Un aliado crucial en la lucha por la supervivencia, marcado por su agricultura y recursos, pero también por los conflictos con los Salvadores.
-                <br> <br>
-
-                <b>El Reino:</b> Unido a Alejandría y Hilltop en la lucha contra los Salvadores, liderado por el carismático Ezekiel, quien junto a su tigre Shiva, aporta esperanza y fuerza a sus aliados.
-                <br> <br>
-
-                <b>El Santuario:</b> Hogar de los Salvadores y su despiadado líder, Negan, cuyo reinado de terror desencadena una guerra total que redefine el panorama de poder en el mundo post-apocalíptico.
-                <br> <br>
-                              </p>
+          </div>
+          <!-- Card 4 -->
+          <div
+            class="col-12 col-md-6 col-lg-3 col-xxl-4 d-flex flex-row align-items-stretch"
+          >
+            <div class="card bg-secondary">
+              <img
+                src="./img/S4.jpg"
+                class="card-img-top"
+                alt="imagen de la primera temporada de TWD"
+              />
+              <div class="card-body text-light">
+                <h5 class="card-title text-light">Temporada 4</h5>
+                <p class="card-text">
+                  El grupo se enfrenta a una enfermedad mortal dentro de la
+                  prisión y a la creciente amenaza del Gobernador. La temporada
+                  concluye con el grupo dividido y en camino hacia un supuesto
+                  refugio llamado Terminus.
+                </p>
+                <div
+                  class="card-footer bg-secondary border-0 d-flex align-items-"
+                >
+                  <a href="#" class="btn btn-danger">Read more</a>
+                </div>
+              </div>
             </div>
+          </div>
+          <!-- Card 5 -->
+          <div
+            class="col-12 col-md-6 col-lg-3 col-xxl-4 d-flex flex-row align-items-stretch"
+          >
+            <div class="card bg-secondary">
+              <img
+                src="./img/S5.jpg"
+                class="card-img-top"
+                alt="imagen de la primera temporada de TWD"
+              />
+              <div class="card-body text-light">
+                <h5 class="card-title text-light">Temporada 5</h5>
+                <p class="card-text">
+                  Después de escapar de Terminus y reagruparse, los
+                  supervivientes se dirigen hacia Washington D.C., creyendo que
+                  hay una cura para la infección. Se encuentran con la comunidad
+                  de Alexandria, donde intentan adaptarse a una vida más normal.
+                </p>
+                <div
+                  class="card-footer bg-secondary border-0 d-flex align-items-"
+                >
+                  <a href="#" class="btn btn-danger">Read more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Card 6 -->
+          <div
+            class="col-12 col-md-6 col-lg-3 col-xxl-4 d-flex flex-row align-items-stretch"
+          >
+            <div class="card bg-secondary">
+              <img
+                src="./img/S6.jpg"
+                class="card-img-top"
+                alt="imagen de la primera temporada de TWD"
+              />
+              <div class="card-body">
+                <h5 class="card-title text-light">Temporada 6</h5>
+                <p class="card-text text-light">
+                  La temporada se enfoca en la adaptación del grupo a Alexandria
+                  y en los desafíos de integrarse con sus residentes. Los
+                  peligros aumentan con la aparición de los Salvadores, un grupo
+                  brutal dirigido por Negan.
+                </p>
+                <div
+                  class="card-footer bg-secondary border-0 d-flex align-items-"
+                >
+                  <a href="#" class="btn btn-danger">Read more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Card 7 -->
+          <div
+            class="col-12 col-md-6 col-lg-3 col-xxl-4 d-flex flex-row align-items-stretch"
+          >
+            <div class="card bg-secondary">
+              <img
+                src="./img/S7.jpg"
+                class="card-img-top"
+                alt="imagen de la primera temporada de TWD"
+              />
+              <div class="card-body">
+                <h5 class="card-title text-light">Temporada 7</h5>
+                <p class="card-text text-light">
+                  Esta temporada se centra en el reinado tiránico de Negan y los
+                  Salvadores sobre Alexandria y otras comunidades. Rick y su
+                  grupo deben navegar por la opresión y planear cómo luchar
+                  contra esta nueva amenaza.
+                </p>
+                <div
+                  class="card-footer bg-secondary border-0 d-flex align-items-"
+                >
+                  <a href="#" class="btn btn-danger">Read more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Card 8 -->
+          <div
+            class="col-12 col-md-6 col-lg-3 col-xxl-4 d-flex flex-row align-items-stretch"
+          >
+            <div class="card bg-secondary">
+              <img
+                src="./img/S8.jpeg"
+                class="card-img-top"
+                alt="imagen de la primera temporada de TWD"
+              />
+              <div class="card-body">
+                <h5 class="card-title text-light">Temporada 8</h5>
+                <p class="card-text text-light">
+                  La temporada 8 de "The Walking Dead" se trata de la guerra
+                  entre el grupo de Rick y los Salvadores liderados por Negan.
+                  La guerra causa numerosas bajas y destrucción en ambos lados.
+                  Rick pierde a su hijo Carl, quien fue mordido por un caminante
+                  y le insta a hacer las paces con Negan. La temporada está
+                  basada en la serie de cómics "All Out War Part I & II" e
+                  introduce a un nuevo personaje llamado Siddiq.
+                </p>
+                <div
+                  class="card-footer bg-secondary border-0 d-flex align-items-"
+                >
+                  <a href="#" class="btn btn-danger">Read more</a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-
+      </div>
+    </section>
+    <section></section>
+    <div class="container">
+      <div class="p-5 bg-dark row">
+        <h1 class="display-2 text-center fw-bold text-danger mb-5" id="mapa">
+          Mapa de la serie
+        </h1>
+        <div class="ratio ratio-1x1 w-50 col">
+          <iframe
+            src="https://www.google.com/maps/d/embed?mid=1EIyl56n4fzRrSD1sMMjfTlug_i4&hl=en_US&ehbc=2E312F"
+            width="640"
+            height="480"
+          ></iframe>
         </div>
-        
+        <div class="text-light col ps-5">
+          <p>
+            Este mapa interactivo te guía a través de los momentos más
+            emblemáticos y trascendentales de la saga de cómics "The Walking
+            Dead". A medida que explores este mapa, encontrarás localizaciones
+            clave donde nuestros personajes enfrentaron desafíos inimaginables,
+            forjaron alianzas cruciales, y lucharon contra amenazas tanto vivas
+            como muertas.
+            <br />
+            <br />
+            <b>Atlanta:</b> El inicio de un viaje inolvidable, donde Rick Grimes
+            despierta en un mundo transformado por el apocalipsis zombi,
+            iniciando su búsqueda desesperada por su familia. <br />
+            <br />
 
+            <b>La Granja de Hershel:</b> Un refugio temporal de esperanza y
+            desesperación, marcado por revelaciones personales, conflictos
+            morales y la pérdida de seres queridos. <br />
+            <br />
 
-          
-        <section>
+            <b>La Prisión:</b> Un símbolo de seguridad en medio del caos, que se
+            convierte en escenario de algunas de las batallas más intensas
+            contra los caminantes y enfrentamientos con el Gobernador,
+            culminando en tragedia y devastación. <br />
+            <br />
 
-        </section>
-        <!-- Footer con grid de 3 columnas irregulares-->
-        <footer class="p-3 bg-secondary text-white">
-            <div class="container">
-                <div class="row">
-                    <div class="col-6 col-lg-3 p-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, non illo rem labore voluptas deleniti pariatur mollitia ipsa nisi adipisci reiciendis, suscipit blanditiis itaque soluta corrupti tenetur perspiciatis doloribus iure?</div>
-                    <div class="col-6 col-lg-3 p-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, non illo rem labore voluptas deleniti pariatur mollitia ipsa nisi adipisci reiciendis, suscipit blanditiis itaque soluta corrupti tenetur perspiciatis doloribus iure?</div>
-                    <div class="col-12 col-lg-6 p-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, non illo rem labore voluptas deleniti pariatur mollitia ipsa nisi adipisci reiciendis, suscipit blanditiis itaque soluta corrupti tenetur perspiciatis doloribus iure?</div>
-                </div>
-            </div>
-  
-        </footer>
+            <b>Woodbury:</b> Bajo la fachada de una comunidad idílica, el
+            Gobernador esconde su tiranía y obsesión con el poder, lo que lleva
+            a enfrentamientos épicos que cambian el curso de la historia. <br />
+            <br />
+
+            <b>Terminus:</b> Lo que parece ser un santuario para los
+            sobrevivientes rápidamente se revela como una trampa mortal,
+            destacando la brutalidad a la que puede llegar la humanidad en su
+            peor momento. <br />
+            <br />
+
+            <b>Alejandría:</b> Un bastión de civilización en el caos, donde los
+            protagonistas buscan construir una nueva vida, enfrentando al mismo
+            tiempo las amenazas internas y externas que desafían su frágil
+            estabilidad. <br />
+            <br />
+
+            <b>La Colonia Hilltop:</b> Un aliado crucial en la lucha por la
+            supervivencia, marcado por su agricultura y recursos, pero también
+            por los conflictos con los Salvadores. <br />
+            <br />
+
+            <b>El Reino:</b> Unido a Alejandría y Hilltop en la lucha contra los
+            Salvadores, liderado por el carismático Ezekiel, quien junto a su
+            tigre Shiva, aporta esperanza y fuerza a sus aliados. <br />
+            <br />
+
+            <b>El Santuario:</b> Hogar de los Salvadores y su despiadado líder,
+            Negan, cuyo reinado de terror desencadena una guerra total que
+            redefine el panorama de poder en el mundo post-apocalíptico. <br />
+            <br />
+          </p>
+        </div>
+      </div>
     </div>
+    <!-- Footer con grid de 3 columnas irregulares-->
+
+    <div class="container">
+      <footer
+        class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
+      >
+        <div class="col-md-4 d-flex align-items-center">
+          <a
+            href="/"
+            class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1"
+          >
+            <svg class="bi" width="30" height="24">
+              <use xlink:href="#bootstrap"></use>
+            </svg>
+          </a>
+          <span class="text-muted">© 2021 Company, Inc</span>
+        </div>
+
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+          <li class="ms-3">
+            <a class="text-muted" href="https://wa.link/l1d7uh"
+              ><svg class="bi" width="24" height="24">
+                <use xlink:href="#whats"></use></svg
+            ></a>
+          </li>
+          <li class="ms-3">
+            <a class="text-muted" href="https://www.instagram.com/manuelfesta_/"
+              ><svg class="bi" width="24" height="24">
+                <use xlink:href="#instagram"></use></svg
+            ></a>
+          </li>
+          <li class="ms-3">
+            <a class="text-muted" href="https://github.com/ManuFes"
+              ><svg class="bi" width="24" height="24">
+                <use xlink:href="#facebook"></use></svg
+            ></a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+    <div class="go-top-container">
+      <div class="go-top-button">
+        <i class="fas fa-chevron-up"></i>
+      </div>
+    </div>
+    <script src="/js/gotop.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+  </body>
 </html>

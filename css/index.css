@@ -1,45 +1,115 @@
 /******* SIZING ********************************************************/
-.w-30{
-    width: 30%;
+.w-30 {
+  width: 30%;
 }
-
 
 /******* BG COLORS *****************************************************/
 
-.bg-navbar{
-    background-color: rgb(0, 0, 0);
+.bg-navbar {
+  background-color: rgb(0, 0, 0);
 }
-
+.navHover {
+  transition: transform 500ms !important;
+}
+.navHover:hover {
+  color: red !important;
+}
 
 /******* HERO **********************************************************/
 
-#hero{
-    background-image: url('../img/her.jpeg');
+#hero {
+  background-image: url("../img/her.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+@media only screen and (width<=750px) {
+  #hero {
+    background-image: url("../img/maschica.jpg");
     background-size: cover;
     background-position: center;
+  }
 }
-@media only screen and (width<=750px){
-    #hero{
-        background-image: url('../img/maschica.jpg');
-        background-size: cover;
-        background-position: center;
-    }
-}
-
 
 /* Estilo normal de la tarjeta */
 .card {
-    /* Estilos normales aquí */
-    /* Por ejemplo, tamaño, bordes, sombra, etc. */
-    transition: transform 500ms; /* Agrega una transición suave */
-  }
-  
-  /* Estilo cuando el mouse está sobre la tarjeta */
-  .card:hover {
-    transform: scale(1.05); /* Aumenta la escala al 105% del tamaño original */
-  }
-  
+  /* Estilos normales aquí */
+  /* Por ejemplo, tamaño, bordes, sombra, etc. */
+  transition: transform 500ms; /* Agrega una transición suave */
+}
+
+/* Estilo cuando el mouse está sobre la tarjeta */
+.card:hover {
+  transform: scale(1.05); /* Aumenta la escala al 105% del tamaño original */
+}
+
 /******NavBar************************************************************/
-.color-brown{
-    color: rgb(98, 27, 14);
+.color-brown {
+  color: rgb(98, 27, 14);
+}
+/* GOTOP */
+
+.go-top-container {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  width: 6.6rem;
+  height: 6.6rem;
+  z-index: -1;
+}
+
+.go-top-button {
+  width: 0rem;
+  height: 0rem;
+  background-color: red;
+  background-image: url("../img/ballesta.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.2s;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.go-top-button i {
+  position: absolute;
+  font-size: 1.7rem;
+  top: 48%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  color: #fff;
+  transition: 0.2s;
+}
+
+.show {
+  z-index: 10;
+}
+
+.show .go-top-button {
+  animation: popup 0.3s ease-in-out;
+  width: 4.6rem;
+  height: 4.6rem;
+  z-index: 11;
+}
+
+.show i {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+@keyframes popup {
+  0% {
+    width: 0;
+    height: 0;
+  }
+  50% {
+    width: 8rem;
+    height: 8rem;
+  }
+  100% {
+    width: 6.6rem;
+    height: 6.6rem;
+  }
 }
