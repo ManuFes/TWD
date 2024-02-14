@@ -113,3 +113,11 @@
     height: 6.6rem;
   }
 }
+
+
+
+#carouselExampleAutoplaying{
+    height: 75%;
+    width: 75%;
+    margin: auto;
+}

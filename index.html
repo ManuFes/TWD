@@ -9,6 +9,7 @@
     />
     <link rel="stylesheet" href="./css/index.css" />
     <link rel="shortcut icon" href="./img/favicon.jpeg" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <title>The walking dead - Tribute web</title>
   </head>
   <body class="bg-dark">
@@ -43,12 +44,12 @@
             </li>
             <li class="nav-item">
               <a class="nav-link fs-3 text-white navHover" href="#intro"
-                >Introduction</a
+                >Introduccion</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link fs-3 text-white navHover" href="#seasons"
-                >Seasons</a
+              <a class="nav-link fs-3 text-white navHover" href="#Temporadas"
+                >Temporadas</a
               >
             </li>
             <li class="nav-item">
@@ -57,8 +58,8 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link fs-3 text-white navHover" href="#gallery"
-                >Gallery</a
+              <a class="nav-link fs-3 text-white navHover" href="#galeria"
+                >Galeria</a
               >
             </li>
             <li class="nav-item">
@@ -77,7 +78,7 @@
     <!-- Intro section with bootstrap grid-->
     <section id="intro" class="p-5">
       <h1 class="display-2 text-center fw-bold mb-5 text-danger">
-        Introduction
+        Introduccion
       </h1>
       <div class="container">
         <!-- Grid basico con bootstrap de 2 columnas-->
@@ -117,10 +118,10 @@
         </div>
       </div>
     </section>
-    <!-- Seasons -->
+    <!-- Temporadas -->
     <section class="p-5">
-      <h1 class="display-2 text-center fw-bold text-danger mb-5" id="seasons">
-        Seasons
+      <h1 class="display-2 text-center fw-bold text-danger mb-5" id="Temporadas">
+        Temporadas
       </h1>
 
       <div class="container">
@@ -413,46 +414,68 @@
         </div>
       </div>
     </div>
+<div>
+  <h1 class="display-2 text-center fw-bold text-danger mb-5" id="galeria">
+    Galeria
+  </h1>
+  <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./img/c1.jpeg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="./img/c2.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="./img/c3.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="./img/c4.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="./img/c5.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="./img/c6.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="./img/c7.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="./img/c8.jpg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+
     <!-- Footer con grid de 3 columnas irregulares-->
 
     <div class="container">
-      <footer
-        class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
-      >
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
         <div class="col-md-4 d-flex align-items-center">
-          <a
-            href="/"
-            class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1"
-          >
-            <svg class="bi" width="30" height="24">
-              <use xlink:href="#bootstrap"></use>
-            </svg>
+          <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+            <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
           </a>
           <span class="text-muted">© 2021 Company, Inc</span>
         </div>
-
+    
         <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-          <li class="ms-3">
-            <a class="text-muted" href="https://wa.link/l1d7uh"
-              ><svg class="bi" width="24" height="24">
-                <use xlink:href="#whats"></use></svg
-            ></a>
-          </li>
-          <li class="ms-3">
-            <a class="text-muted" href="https://www.instagram.com/manuelfesta_/"
-              ><svg class="bi" width="24" height="24">
-                <use xlink:href="#instagram"></use></svg
-            ></a>
-          </li>
-          <li class="ms-3">
-            <a class="text-muted" href="https://github.com/ManuFes"
-              ><svg class="bi" width="24" height="24">
-                <use xlink:href="#facebook"></use></svg
-            ></a>
-          </li>
+          <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+          <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+          <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
         </ul>
       </footer>
     </div>
+
+
     <div class="go-top-container">
       <div class="go-top-button">
         <i class="fas fa-chevron-up"></i>
