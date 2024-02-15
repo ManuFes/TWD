@@ -4,7 +4,7 @@
 
 
 
-##1. Intro a TWD
+## 1. Intro a TWD
 La página ofrece una introducción detallada sobre la serie, incluyendo su trama, personajes principales y su impacto cultural.
 
 ## 2. Imágenes de Cada Temporada
